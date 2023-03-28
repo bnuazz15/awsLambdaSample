@@ -1,7 +1,7 @@
 import json
 
 def start_handler(event, context):
-    message = "Hello from Lambda with Python!!!! ver1"
+    message = "Hello from Lambda with Python!!!! ver2"
 
     return {
         'statusCode': 200,
