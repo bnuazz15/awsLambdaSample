@@ -8,7 +8,6 @@ phases:
       - echo "Installing dependencies..."
       - mkdir -p build
       - pip install -r requirements.txt -t build/
-      - cp -R src/* build/
       
   build:
     commands:
