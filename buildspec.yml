@@ -12,6 +12,11 @@ phases:
     commands:
       - echo "Running tests..."
       - python -m unittest discover
+  
+  post_build:
+    commands:
+      # 빌드 결과물을 S3 버킷에 업로드
+      - aws s3 cp ./build s3://ArtifactBucket/ --recursive
 
 artifacts:
   files:
