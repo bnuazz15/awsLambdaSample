@@ -11,6 +11,7 @@ phases:
       # - pip install -r requirements.txt -t build/
       - zip my_app.zip app.py
       - ls
+      - pwd
       
   build:
     commands:
