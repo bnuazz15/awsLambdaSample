@@ -9,7 +9,7 @@ phases:
       # - mkdir -p build
       # - cp app.py build 
       # - pip install -r requirements.txt -t build/
-      - zip my_app.zip app.py
+      - zip app.zip app.py
       - ls
       - pwd
       
@@ -21,7 +21,7 @@ phases:
   post_build:
     commands:
       # 빌드 결과물을 S3 버킷에 업로드
-      - aws s3 cp my_app.zip s3://codepipelinecdkstack-mypipelineartifactsbucket727-1e6m3gc2l2wz6/my_app.zip
+      - aws s3 cp app.zip s3://codepipelinecdkstack-mypipelineartifactsbucket727-1e6m3gc2l2wz6/app.zip
 
 artifacts:
   files:
