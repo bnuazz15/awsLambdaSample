@@ -20,7 +20,7 @@ phases:
   post_build:
     commands:
       # 빌드 결과물을 S3 버킷에 업로드
-      - aws s3 cp my_app.zip s3://codepipelinecdkstack-mypipelineartifactsbucket727-1e6m3gc2l2wz6/my_app.zip --recursive
+      - aws s3 cp ./my_app.zip s3://codepipelinecdkstack-mypipelineartifactsbucket727-1e6m3gc2l2wz6/my_app.zip --recursive
 
 artifacts:
   files:
