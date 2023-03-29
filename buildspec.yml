@@ -10,6 +10,7 @@ phases:
       # - cp app.py build 
       # - pip install -r requirements.txt -t build/
       - zip my_app.zip app.py
+      - ls
       
   build:
     commands:
