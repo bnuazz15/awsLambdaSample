@@ -9,7 +9,7 @@ phases:
       # - mkdir -p build
       # - cp app.py build 
       # - pip install -r requirements.txt -t build/
-      # - zip my_app.zip app.py
+      - zip my_app.zip app.py
       
   build:
     commands:
