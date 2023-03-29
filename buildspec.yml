@@ -10,8 +10,8 @@ phases:
       # - cp app.py build 
       # - pip install -r requirements.txt -t build/
       - zip app.zip app.py
-      - ls
-      - pwd
+      # - ls
+      # - pwd
       
   build:
     commands:
